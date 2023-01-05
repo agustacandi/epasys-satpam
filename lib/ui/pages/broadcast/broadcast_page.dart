@@ -4,6 +4,7 @@ import 'package:epasys_app/providers/parking_provider.dart';
 import 'package:epasys_app/providers/vehicle_provider.dart';
 import 'package:epasys_app/shared/functions.dart';
 import 'package:epasys_app/shared/theme.dart';
+import 'package:epasys_app/ui/widgets/broadcast_shimmer.dart';
 import 'package:epasys_app/ui/widgets/home_spotlight_item.dart';
 import 'package:epasys_app/ui/widgets/vehicle_card_item.dart';
 import 'package:flutter/material.dart';
@@ -26,7 +27,7 @@ class _BroadcastPageState extends State<BroadcastPage> {
         .getBroadcastsByToken(authProvider.user.token!);
     if (mounted) {
       setState(() {
-        isLoading = true;
+        isLoading = false;
       });
     }
   }
@@ -108,25 +109,28 @@ class _BroadcastPageState extends State<BroadcastPage> {
                       top: Radius.circular(30),
                     ),
                   ),
-                  child: value.listBroadcasts.isEmpty
-                      ? Center(
-                          child: Text(
-                            'Anda belum mendambahkan broadcast',
-                            style: blackTextStyle,
-                          ),
-                        )
-                      : ListView.separated(
-                          separatorBuilder: (context, index) => const SizedBox(
-                            height: 15,
-                          ),
-                          scrollDirection: Axis.vertical,
-                          itemCount: value.listBroadcasts.length,
-                          itemBuilder: (context, index) {
-                            return BroadcastCard(
-                              broadcast: value.listBroadcasts[index],
-                            );
-                          },
-                        ),
+                  child: isLoading
+                      ? const BroadcastShimmer()
+                      : (value.listBroadcasts.isEmpty
+                          ? Center(
+                              child: Text(
+                                'Anda belum mendambahkan broadcast',
+                                style: blackTextStyle,
+                              ),
+                            )
+                          : ListView.separated(
+                              separatorBuilder: (context, index) =>
+                                  const SizedBox(
+                                height: 15,
+                              ),
+                              scrollDirection: Axis.vertical,
+                              itemCount: value.listBroadcasts.length,
+                              itemBuilder: (context, index) {
+                                return BroadcastCard(
+                                  broadcast: value.listBroadcasts[index],
+                                );
+                              },
+                            )),
                 ),
               ),
             ),
