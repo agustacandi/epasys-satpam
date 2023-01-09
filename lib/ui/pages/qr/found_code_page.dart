@@ -1,13 +1,11 @@
 import 'package:epasys_app/providers/auth_provider.dart';
 import 'package:epasys_app/providers/parking_provider.dart';
 import 'package:epasys_app/shared/config.dart';
-import 'package:epasys_app/shared/functions.dart';
 import 'package:epasys_app/shared/theme.dart';
 import 'package:epasys_app/ui/widgets/buttons.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 import 'package:quickalert/quickalert.dart';
-import 'package:shared_preferences/shared_preferences.dart';
 
 class FoundCodePage extends StatefulWidget {
   final Function() screenClosed;

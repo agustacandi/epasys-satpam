@@ -1,4 +1,3 @@
-import 'package:epasys_app/models/user_model.dart';
 import 'package:epasys_app/providers/auth_provider.dart';
 import 'package:epasys_app/shared/config.dart';
 import 'package:epasys_app/shared/theme.dart';
@@ -6,7 +5,6 @@ import 'package:epasys_app/ui/widgets/buttons.dart';
 import 'package:epasys_app/ui/widgets/forms.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
-import 'package:quickalert/quickalert.dart';
 
 class DetailAccountPage extends StatefulWidget {
   const DetailAccountPage({super.key});

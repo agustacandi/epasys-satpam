@@ -1,12 +1,8 @@
 import 'package:epasys_app/providers/auth_provider.dart';
 import 'package:epasys_app/providers/broadcast_provider.dart';
-import 'package:epasys_app/providers/parking_provider.dart';
-import 'package:epasys_app/providers/vehicle_provider.dart';
-import 'package:epasys_app/shared/functions.dart';
 import 'package:epasys_app/shared/theme.dart';
 import 'package:epasys_app/ui/widgets/broadcast_shimmer.dart';
 import 'package:epasys_app/ui/widgets/home_spotlight_item.dart';
-import 'package:epasys_app/ui/widgets/vehicle_card_item.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

@@ -1,4 +1,3 @@
-import 'package:epasys_app/shared/theme.dart';
 import 'package:epasys_app/ui/pages/qr/scan_qr_page.dart';
 import 'package:flutter/material.dart';
 
@@ -14,7 +13,7 @@ class TestPage extends StatelessWidget {
             Navigator.push(
               context,
               MaterialPageRoute(
-                builder: (context) => ScanQRPage(),
+                builder: (context) => const ScanQRPage(),
               ),
             );
           },

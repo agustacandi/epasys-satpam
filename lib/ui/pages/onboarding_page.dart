@@ -1,8 +1,5 @@
 import 'package:carousel_slider/carousel_slider.dart';
 import 'package:epasys_app/shared/theme.dart';
-import 'package:epasys_app/ui/pages/home_page.dart';
-import 'package:epasys_app/ui/pages/main_page.dart';
-import 'package:epasys_app/ui/pages/sign_in_page.dart';
 import 'package:flutter/material.dart';
 import 'package:shared_preferences/shared_preferences.dart';
 

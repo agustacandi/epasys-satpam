@@ -1,6 +1,5 @@
 import 'dart:io';
 
-import 'package:epasys_app/models/user_model.dart';
 import 'package:epasys_app/providers/auth_provider.dart';
 import 'package:epasys_app/shared/config.dart';
 import 'package:epasys_app/shared/image_helper.dart';
@@ -10,9 +9,7 @@ import 'package:epasys_app/ui/widgets/forms.dart';
 import 'package:flutter/material.dart';
 import 'package:image_cropper/image_cropper.dart';
 import 'package:image_picker/image_picker.dart';
-import 'package:intl/intl.dart';
 import 'package:provider/provider.dart';
-import 'package:quickalert/models/quickalert_options.dart';
 import 'package:quickalert/quickalert.dart';
 
 class EditAccountPage extends StatefulWidget {

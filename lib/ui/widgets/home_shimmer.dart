@@ -45,13 +45,13 @@ class HomeShimmer extends StatelessWidget {
                     ),
                     child: Column(
                       crossAxisAlignment: CrossAxisAlignment.start,
-                      children: [
+                      children: const [
                         Skeleton(
                           width: 100,
                           height: 20,
                           borderRadius: 10,
                         ),
-                        const SizedBox(
+                        SizedBox(
                           height: 12,
                         ),
                         Skeleton(
@@ -84,13 +84,13 @@ class HomeShimmer extends StatelessWidget {
         children: <Widget>[
           Column(
             crossAxisAlignment: CrossAxisAlignment.start,
-            children: <Widget>[
+            children: const <Widget>[
               Skeleton(
                 width: 100,
                 height: 20,
                 borderRadius: 10,
               ),
-              const SizedBox(
+              SizedBox(
                 height: 6,
               ),
               Skeleton(
@@ -100,7 +100,7 @@ class HomeShimmer extends StatelessWidget {
               )
             ],
           ),
-          Skeleton(
+          const Skeleton(
             width: 60,
             height: 60,
             borderRadius: 60,
@@ -117,8 +117,8 @@ class HomeShimmer extends StatelessWidget {
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
           Row(
-            children: <Widget>[
-              const SizedBox(
+            children: const <Widget>[
+              SizedBox(
                 width: 16,
               ),
               Skeleton(
@@ -151,14 +151,14 @@ class HomeShimmer extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Skeleton(
+                      const Skeleton(
                         width: 200,
                         height: 108,
                         borderRadius: 10,
                       ),
                       Container(
                         padding: const EdgeInsets.all(12),
-                        child: Skeleton(
+                        child: const Skeleton(
                           width: 100,
                           height: 20,
                           borderRadius: 10,
@@ -183,14 +183,14 @@ class HomeShimmer extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Skeleton(
+                      const Skeleton(
                         width: 200,
                         height: 108,
                         borderRadius: 10,
                       ),
                       Container(
                         padding: const EdgeInsets.all(12),
-                        child: Skeleton(
+                        child: const Skeleton(
                           width: 100,
                           height: 20,
                           borderRadius: 10,
@@ -215,14 +215,14 @@ class HomeShimmer extends StatelessWidget {
                   child: Column(
                     crossAxisAlignment: CrossAxisAlignment.start,
                     children: <Widget>[
-                      Skeleton(
+                      const Skeleton(
                         width: 200,
                         height: 108,
                         borderRadius: 10,
                       ),
                       Container(
                         padding: const EdgeInsets.all(12),
-                        child: Skeleton(
+                        child: const Skeleton(
                           width: 100,
                           height: 20,
                           borderRadius: 10,
@@ -249,7 +249,7 @@ class HomeShimmer extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          Skeleton(
+          const Skeleton(
             width: 100,
             height: 20,
             borderRadius: 10,
@@ -270,20 +270,20 @@ class HomeShimmer extends StatelessWidget {
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceEvenly,
               children: [
-                Skeleton(
+                const Skeleton(
                   width: 150,
                   height: 150,
                   borderRadius: 150,
                 ),
                 Column(
                   mainAxisAlignment: MainAxisAlignment.center,
-                  children: [
+                  children: const [
                     Skeleton(
                       width: 100,
                       height: 20,
                       borderRadius: 10,
                     ),
-                    const SizedBox(
+                    SizedBox(
                       height: 8,
                     ),
                     Skeleton(

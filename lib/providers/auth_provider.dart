@@ -1,7 +1,6 @@
 import 'dart:io';
 
 import 'package:epasys_app/models/employee_model.dart';
-import 'package:epasys_app/models/user_model.dart';
 import 'package:epasys_app/services/auth_service.dart';
 import 'package:flutter/material.dart';
 

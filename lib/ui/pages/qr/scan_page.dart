@@ -1,10 +1,7 @@
 import 'dart:async';
 
 import 'package:epasys_app/providers/auth_provider.dart';
-import 'package:epasys_app/providers/check_in_provider.dart';
 import 'package:epasys_app/providers/parking_provider.dart';
-import 'package:epasys_app/services/parking_service.dart';
-import 'package:epasys_app/shared/functions.dart';
 import 'package:epasys_app/shared/theme.dart';
 import 'package:epasys_app/ui/pages/qr/found_code_page.dart';
 import 'package:epasys_app/ui/pages/qr/qr_overlay.dart';
@@ -24,7 +21,7 @@ class ScanPage extends StatefulWidget {
 class _ScanPageState extends State<ScanPage> {
   MobileScannerController cameraController = MobileScannerController();
   bool _screenOpened = false;
-  bool _isLoading = false;
+  final bool _isLoading = false;
 
   @override
   Widget build(BuildContext context) {

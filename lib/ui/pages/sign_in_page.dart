@@ -1,4 +1,3 @@
-import 'package:epasys_app/models/user_model.dart';
 import 'package:epasys_app/providers/auth_provider.dart';
 import 'package:epasys_app/providers/broadcast_provider.dart';
 import 'package:epasys_app/providers/parking_provider.dart';

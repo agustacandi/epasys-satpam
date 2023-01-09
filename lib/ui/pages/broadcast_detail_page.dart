@@ -3,7 +3,6 @@ import 'package:epasys_app/shared/config.dart';
 import 'package:epasys_app/shared/functions.dart';
 import 'package:epasys_app/shared/theme.dart';
 import 'package:flutter/material.dart';
-import 'package:intl/intl.dart';
 
 class BroadcastDetailPage extends StatefulWidget {
   final BroadcastModel broadcast;

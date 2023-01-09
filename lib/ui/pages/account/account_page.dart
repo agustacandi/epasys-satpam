@@ -1,5 +1,4 @@
 import 'package:epasys_app/models/employee_model.dart';
-import 'package:epasys_app/models/user_model.dart';
 import 'package:epasys_app/providers/auth_provider.dart';
 import 'package:epasys_app/services/auth_service.dart';
 import 'package:epasys_app/shared/config.dart';

@@ -1,9 +1,7 @@
-import 'package:epasys_app/providers/auth_provider.dart';
 import 'package:epasys_app/providers/check_in_provider.dart';
 import 'package:epasys_app/providers/vehicle_provider.dart';
 import 'package:epasys_app/shared/theme.dart';
 import 'package:epasys_app/ui/widgets/buttons.dart';
-import 'package:epasys_app/ui/widgets/vehicle_card_item.dart';
 import 'package:flutter/material.dart';
 import 'package:provider/provider.dart';
 

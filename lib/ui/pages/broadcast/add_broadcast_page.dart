@@ -2,7 +2,6 @@ import 'dart:io';
 
 import 'package:epasys_app/providers/auth_provider.dart';
 import 'package:epasys_app/providers/broadcast_provider.dart';
-import 'package:epasys_app/providers/vehicle_provider.dart';
 import 'package:epasys_app/shared/image_helper.dart';
 import 'package:epasys_app/shared/theme.dart';
 import 'package:epasys_app/ui/widgets/buttons.dart';

@@ -1,10 +1,9 @@
-import 'dart:async';
 
 import 'package:flutter/material.dart';
 import 'package:mobile_scanner/mobile_scanner.dart';
 
 class ScanQRPage extends StatefulWidget {
-  ScanQRPage({Key? key}) : super(key: key);
+  const ScanQRPage({Key? key}) : super(key: key);
 
   @override
   State<ScanQRPage> createState() => _ScanQRPageState();

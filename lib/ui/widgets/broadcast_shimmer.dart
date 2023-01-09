@@ -8,20 +8,20 @@ class BroadcastShimmer extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Column(
-      children: [
-        const SizedBox(
+      children: const [
+        SizedBox(
           height: 20,
         ),
         Card(),
-        const SizedBox(
+        SizedBox(
           height: 10,
         ),
         Card(),
-        const SizedBox(
+        SizedBox(
           height: 10,
         ),
         Card(),
-        const SizedBox(
+        SizedBox(
           height: 10,
         ),
       ],
@@ -47,8 +47,8 @@ class Card extends StatelessWidget {
       child: Column(
         crossAxisAlignment: CrossAxisAlignment.start,
         children: <Widget>[
-          ClipRRect(
-            borderRadius: const BorderRadius.vertical(
+          const ClipRRect(
+            borderRadius: BorderRadius.vertical(
               top: Radius.circular(10),
             ),
             child: Skeleton(
@@ -61,13 +61,13 @@ class Card extends StatelessWidget {
             padding: const EdgeInsets.all(12),
             child: Column(
               crossAxisAlignment: CrossAxisAlignment.start,
-              children: [
+              children: const [
                 Skeleton(
                   width: 120,
                   height: 10,
                   borderRadius: 10,
                 ),
-                const SizedBox(
+                SizedBox(
                   height: 4,
                 ),
                 Skeleton(
